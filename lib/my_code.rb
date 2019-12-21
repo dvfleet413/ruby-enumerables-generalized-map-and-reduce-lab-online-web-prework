@@ -12,7 +12,7 @@ end
 
 
 def reduce(array, starting_point = 0)
-  total = 0
+  result = nill
   i = 0 
   while i < array.length do
     yield
@@ -22,3 +22,35 @@ def reduce(array, starting_point = 0)
   total
 end
 
+#def reduce_to_total(array, starting_point = 0)
+#  total = starting_point
+#  i = 0
+#  while i < array.length do
+#    total += array[i]
+#    i += 1 
+#  end
+#  total
+#end
+
+#def reduce_to_all_true(array)
+#  i = 0 
+#  while i < array.length do
+#    if !array[i]
+#      return false
+#    else
+#      i += 1 
+#    end
+#  end
+#  return true
+#end
+
+#def reduce_to_any_true(array)
+#  i = 0 
+#  while i < array.length do
+#    if array[i]
+#    return true
+#   else
+#      i += 1 
+#    end
+#  end
+#end
