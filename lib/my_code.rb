@@ -18,6 +18,7 @@ def reduce(array, starting_point = 0)
     result = yield(array[i], result)
     i += 1 
   end
+  return false if result == nil
   result
 end
 
