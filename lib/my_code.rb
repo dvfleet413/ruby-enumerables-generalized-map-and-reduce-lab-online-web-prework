@@ -15,12 +15,17 @@ def reduce(array, starting_point = 0)
   result = nil
   i = 0 
   while i < array.length do
-    yield
-    
+    yield(result, array[i])
     i += 1 
   end
   result
 end
+
+#describe 'my own reduce' do
+#  it "returns a running total when not given a starting point" do
+#    source_array = [1,2,3]
+#    expect(reduce(source_array){|memo, n| memo + n}).to eq(6)
+#  end
 
 #def reduce_to_total(array, starting_point = 0)
 #  total = starting_point
