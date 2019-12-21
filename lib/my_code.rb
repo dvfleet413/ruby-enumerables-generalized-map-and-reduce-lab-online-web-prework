@@ -19,7 +19,7 @@ def reduce(array, starting_point = 0)
     
     i += 1 
   end
-  total
+  result
 end
 
 #def reduce_to_total(array, starting_point = 0)
