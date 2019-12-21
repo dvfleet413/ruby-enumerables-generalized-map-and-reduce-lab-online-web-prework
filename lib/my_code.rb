@@ -12,10 +12,10 @@ end
 
 
 def reduce(array, starting_point = 0)
-  result = 0
+  result = starting_point
   i = 0 
   while i < array.length do
-    yield(result, array[i])
+    yield(array[i], result)
     i += 1 
   end
   result
